@@ -51,8 +51,25 @@ function calc_Age(age) {
 // osama["sisName"] = "lelo";
 // console.log(osama);
 
+// let osama = {
+//   firstName: prompt("enter your name:"),
+//   lastName: prompt("enter your last name:"),
+// };
+// console.log(osama);
+
+// const osamasFriend = ["cala", "gutu", "balanbal"];
+// console.log(osamasFriend[2]);
+// osamasFriend.pop();
+// osamasFriend.shift();
+// osamasFriend.unshift("bakate");
+// osamasFriend.push(prompt("enter new name"));
+// console.log(osamasFriend);
+
 let osama = {
-  firstName: prompt("enter your name:"),
-  lastName: prompt("enter your last name:"),
+  age: 20,
+  firstName: "osama",
+  lastName: "dawud",
 };
-console.log(osama);
+
+const need = prompt("enter what you want to search: ");
+console.log(osama[need]);
