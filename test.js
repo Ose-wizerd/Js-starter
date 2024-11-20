@@ -65,11 +65,59 @@ function calc_Age(age) {
 // osamasFriend.push(prompt("enter new name"));
 // console.log(osamasFriend);
 
-let osama = {
-  age: 20,
-  firstName: "osama",
-  lastName: "dawud",
-};
+// let osama = {
+//   age: 20,
+//   firstName: "osama",
+//   lastName: "dawud",
+//   birthYear: 2001,
+//   work: "driver",
+//   hasDriverLicense: true,
+//   calcAge: function () {
+//     return 2024 - osama.birthYear;
+//   },
+// };
 
-const need = prompt("enter what you want to search: ");
-console.log(osama[need]);
+// // const need = prompt("enter what you want to search: ");
+// // console.log(osama[need]);
+// // console.log(osama.agge);
+// console.log(
+//   `${osama.firstName} is a ${osama.age} years old ${osama.work}, and has ${
+//     osama.hasDriverLicense ? "a" : "no"
+//   } driver license`
+// );
+// console.log(osama.calcAge());
+
+const john = {
+  fullNAme: "jhon dush",
+  johnWeight: 92,
+  johnHeight: 1.95,
+  calcBmi: function () {
+    this.johnBmi = this.johnWeight / this.johnHeight ** 2;
+    return this.johnBmi;
+  },
+};
+john.calcBmi();
+const mark = {
+  fullName: "mark guie",
+  markHeight: 1.69,
+  markWeight: 78,
+  calcBmi: function () {
+    this.markBmi = this.markWeight / this.markHeight ** 2;
+    return this.markBmi;
+  },
+};
+mark.calcBmi();
+console.log(mark.markBmi);
+if (mark.markBmi > john.johnBmi) {
+  console.log(
+    `${mark.fullName}'s BMI (${mark.calcBmi()}) is greater than ${
+      john.fullNAme
+    }'s BMI (${john.calcBmi()})`
+  );
+} else if (john.johnBmi > mark.markBmi) {
+  console.log(
+    `${john.fullNAme}'s BMI (${john.calcBmi()}) is greater than ${
+      mark.fullName
+    }'s BMI (${mark.calcBmi()})`
+  );
+}
