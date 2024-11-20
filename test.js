@@ -87,37 +87,57 @@ function calc_Age(age) {
 // );
 // console.log(osama.calcAge());
 
-const john = {
-  fullNAme: "jhon dush",
-  johnWeight: 92,
-  johnHeight: 1.95,
-  calcBmi: function () {
-    this.johnBmi = this.johnWeight / this.johnHeight ** 2;
-    return this.johnBmi;
-  },
-};
-john.calcBmi();
-const mark = {
-  fullName: "mark guie",
-  markHeight: 1.69,
-  markWeight: 78,
-  calcBmi: function () {
-    this.markBmi = this.markWeight / this.markHeight ** 2;
-    return this.markBmi;
-  },
-};
-mark.calcBmi();
-console.log(mark.markBmi);
-if (mark.markBmi > john.johnBmi) {
-  console.log(
-    `${mark.fullName}'s BMI (${mark.calcBmi()}) is greater than ${
-      john.fullNAme
-    }'s BMI (${john.calcBmi()})`
-  );
-} else if (john.johnBmi > mark.markBmi) {
-  console.log(
-    `${john.fullNAme}'s BMI (${john.calcBmi()}) is greater than ${
-      mark.fullName
-    }'s BMI (${mark.calcBmi()})`
-  );
+// BMI comparission
+// const john = {
+//   fullNAme: "jhon dush",
+//   johnWeight: 92,
+//   johnHeight: 1.95,
+//   calcBmi: function () {
+//     this.johnBmi = this.johnWeight / this.johnHeight ** 2;
+//     return this.johnBmi;
+//   },
+// };
+// john.calcBmi();
+// const mark = {
+//   fullName: "mark guie",
+//   markHeight: 1.69,
+//   markWeight: 78,
+//   calcBmi: function () {
+//     this.markBmi = this.markWeight / this.markHeight ** 2;
+//     return this.markBmi;
+//   },
+// };
+// mark.calcBmi();
+// console.log(mark.markBmi);
+// if (mark.markBmi > john.johnBmi) {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.calcBmi()}) is greater than ${
+//       john.fullNAme
+//     }'s BMI (${john.calcBmi()})`
+//   );
+// } else if (john.johnBmi > mark.markBmi) {
+//   console.log(
+//     `${john.fullNAme}'s BMI (${john.calcBmi()}) is greater than ${
+//       mark.fullName
+//     }'s BMI (${mark.calcBmi()})`
+//   );
+// }
+
+// let osama = ["osama", "cala", 54, "umma", "abba"];
+// let typ = [];
+// let n = Number(prompt("enter the number of the array: "));
+// let m = [];
+// for (let i = 0; i < n; i++) {
+//   let e = prompt(`enter the element of the array ${i}: `);
+//   m[i] = e;
+// }
+// console.log(m);
+
+const year = [1999, 1996, 1999, 2001];
+const age = [];
+const cal = (yearr) => 2024 - yearr;
+for (let i = 0; i < year.length; i++) {
+  age.push(cal(year[i]));
 }
+console.log(year);
+console.log(age);
